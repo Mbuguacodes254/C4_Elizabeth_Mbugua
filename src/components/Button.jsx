@@ -1,11 +1,14 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+// Button.js
+import React from 'react';
 
-const Button = (props) => {
+const Button = ({ onClick, children, className }) => {
   return (
-    <div>
-      <button>{props.name}</button>
-    </div>
-  )
-}
+    <button className={className} onClick={onClick}>
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --color-bg: #fff;
+  --color-text: #9e9aaf;
+  --color-text1: #35323e;
+  --color-text2: #232127;
+  --color-shorten-bg: #3b3054;
+  --color-primary: #2acfcf;
+  --color-hover: #80f7f7;
+  --color-hero: #EBE9E9;
+  --color-footer-bg: hsl(225, 11%, 22%);
+  --color-danger :#F46262;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ width: 100vw;
+ height: 100vh;
+  position: relative;
+  font-family: "Roboto", "Poppins", sans-serif;
+ 
+}
+
+.navigation {
+  height: 12vh;
+  background-color: var(--color-bg);
+  color: var(--color-text1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3rem;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo a,
+.loginSection a {
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.loginSection .signupNav {
+background-color: var(--color-primary);
+padding: .5rem;
+border-radius: 2rem;
+color: var(--color-bg);
+}
+
+.loginSection .signupNav:hover{
+  cursor: pointer;
+  color: var(--color-bg);
+  background-color:var(--color-hover);
+  font-weight: 700;
+}
+
+.loginSection {
+  margin-left: 30rem;
+}
+
+.logo a:hover,
+.loginSection a:hover{
+  color:var(--color-text2) ;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+  margin-bottom: 4rem;
+}
+
+.heroLeft {
+  margin-block: 1rem;
+  margin-left: 5rem;
+
+}
+
+.heroLeft h1 {
+  font-size: 48px;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  color: var(--color-text1);
+}
+
+.heroLeft p {
+  font-size: larger;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  color: var(--color-text);
+}
+
+.heroLeft button {
+  margin-left: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.heroLeft button:hover {
+  cursor: pointer;
+  background-color:var(--color-hover);
+  color: var(--color-bg);
+  font-weight: 700;
+}
+
+
+
+.heroRight img {
+  width: 450px;
+  height: 400px;
+  margin-top: 1rem;
+}
+
+.shorten-link {
+  background-image: url("./assets/images/bg-shorten-desktop.svg");
+  background-color: var(--color-shorten-bg);
+
+  padding: 2rem;
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 32.5rem;
+  left: 4rem;
+  z-index: 999;
+}
+
+.shorten-link form {
+  display: flex;
+}
+
+.shorten-link form input {
+  width: 70%;
+  padding: 1rem;
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+}
+
+.shorten-link form button {
+  padding: 1rem;
+  margin-left: 1rem;
+  width: 150px;
+  border-radius: 1rem;
+  background-color: var(--color-primary);
+  border: 2px solid transparent;
+  color: var(--color-bg);
+}
+
+.shorten-link form button:hover {
+  cursor: pointer;
+color: var(--color-bg);
+background-color:var(--color-hover);
+font-weight: 700;
+
+}
+
+.shortened {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  width: 90%;
+  margin-top: 10rem;
+  position: absolute;
+  top: -35px;
+  left: 35px;
+  font-size: 12px;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid transparent;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 2rem;
+  
+
+}
+
+
+.returned_link{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form .copy-shortened-button {
+  padding: .5rem;
+  margin: 0rem;
+  width:80px;
+}
+
+.form .copy-shortened-button:hover{
+  cursor: pointer;
+color: var(--color-bg);
+background-color:var(--color-hover);
+font-weight: 700;
+}
+
+
+
+
+
+.returned_link a {
+  color: var(--color-primary);
+}

@@ -1,0 +1,26 @@
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { Routes, Route} from 'react-router-dom';
+import Home from '../pages/Home';
+import  Features from '../pages/Features';
+import Resources from '../pages/Resources';
+import Prices from '../pages/Prices';
+import SignUp from '../forms/Signup';
+import SignIn from '../forms/SignIn';
+import PasswordRecovery from '../forms/PasswordRecovery';
+
+const Rout = () => {
+  return (
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/features' element={<Features />} />
+      <Route path='/prices' element={<Prices />} />
+      <Route path='/resources' element={<Resources />} />
+      <Route path='/SignUp' element={<SignUp/>}/>
+      <Route path='/SignIn' element={<SignIn/>}/>
+      <Route path='/PasswordRecovery' element={<PasswordRecovery/>}/>
+
+   
+    </Routes>
+  );
+};

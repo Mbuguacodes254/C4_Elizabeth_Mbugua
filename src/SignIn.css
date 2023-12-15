@@ -1,0 +1,69 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the login form */
+  .login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('path-to-your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Back button style */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* Add more styles for the back button */
+  }
+  
+  /* Form styling */
+  .form {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Form title */
+  .form-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button styling */
+  .button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #00b2cc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Link and helper text styling */
+  .help-text, .sign-up-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
